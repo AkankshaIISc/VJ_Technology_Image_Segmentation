@@ -26,23 +26,21 @@ To generate segmentation masks from the COCO 2017 training annotations for a sub
     * The function also includes the functionality to embed the present `category_ids` into the mask filenames (e.g., `image_001_mask_cats_18_58.png`).
 
 ### Code Snippet (Example of Mask Generation Function):
-The code draws the polygon
+
 
 ```python
 draw.polygon(polygon_points, fill=int(category_id * 100))
 
 ### Handling Overlapping Masks
 
-The code that handles overlapping masks:
+### The code that handles overlapping masks:
 
-```python
 mask = np.maximum(mask, np.array(mask_image))
 
 ### creating file name
 
-The code that generates file name:
+### The code that generates file name:
 
-```python
 mask_filename = f"{os.path.splitext(filename)[0]}_mask_cats_{category_id_str}.png"
 
 
