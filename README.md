@@ -1,5 +1,4 @@
 # VJ_Technology_Image_Segmentation
-# Image Segmentation Project
 
 ## Overview
 
