@@ -29,15 +29,14 @@ To generate segmentation masks from the COCO 2017 training annotations for a sub
 
 
 ```python
-draw.polygon(polygon_points, fill=int(category_id * 100))
 
-### Handling Overlapping Masks
+### The code that draws polygon:
+
+draw.polygon(polygon_points, fill=int(category_id * 100))
 
 ### The code that handles overlapping masks:
 
 mask = np.maximum(mask, np.array(mask_image))
-
-### creating file name
 
 ### The code that generates file name:
 
