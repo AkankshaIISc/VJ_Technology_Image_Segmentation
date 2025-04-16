@@ -289,19 +289,8 @@ To train a PyTorch image segmentation model on the dataset prepared in Task 1, a
 * The validation dataset is used to evaluate the model's ability to generalize to unseen data.
 * By monitoring the performance on the validation set, it's possible to detect overfitting (where the model performs well on the training data but poorly on unseen data) and to tune hyperparameters for better generalization.
 
-### Computational Resources
-
-* The training process was designed to be feasible within a maximum of 6 hours of computational resources.
-* Strategies to manage computational resources include:
-    * Utilizing a GPU to accelerate training.
-    * Adjusting the batch size based on available memory.
-    * Resizing input images to a smaller size to reduce memory footprint and computation.
-    * Choosing a UNet architecture with an appropriate number of parameters.
-    * Optimizing the training loop and data loading process.
-
 ### Output of Task 2:
 
 * A trained PyTorch segmentation model, saved as a model checkpoint (e.g., `segmentation_model.pth`).
-* Optional: Training and validation loss curves, saved as data or figures, to visualize the training process.
 
 
